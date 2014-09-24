@@ -1,0 +1,27 @@
+[user]
+    name = arnaud.morvan@camptocamp.com
+    email = arnaud.morvan@camptocamp.com
+
+[color]
+    diff=auto
+    status=auto
+    branch=auto
+    interactive=auto
+    ui=auto
+
+[alias]
+    st = status
+    df = diff
+    co = checkout
+    ci = commit
+    br = branch
+    inbr = log ^master
+    amend = commit --amend
+    st = status
+    who = shortlog -sne
+    oneline = log --pretty=oneline --abbrev-commit --graph
+    changes = diff --name-status
+    dic = diff --cached
+    diffstat = diff --stat
+    lol = log --decorate --pretty=oneline --abbrev-commit --all --graph
+
