@@ -25,3 +25,5 @@
     diffstat = diff --stat
     lol = log --decorate --pretty=oneline --abbrev-commit --all --graph
 
+[core]
+	excludesfile = /home/amorvan/.gitignore_global
