@@ -44,3 +44,5 @@ export PROMPT_COMMAND='__git_ps1 "\[\e[1;32m\]\u\[\e[0;39m\]@\[\e[1;36m\]\h\[\e[
 #    test -n "$_branch" && echo -e " \e[0;32m[git::$_branch]"
 #}
 
+export TERM=xterm
+export PYTHONPATH=$PYTHONPATH:/home/amorvan/apps/eclipse/plugins/org.python.pydev_3.9.2.201502050007/pysrc
