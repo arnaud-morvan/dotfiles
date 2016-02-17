@@ -45,4 +45,3 @@ export PROMPT_COMMAND='__git_ps1 "\[\e[1;32m\]\u\[\e[0;39m\]@\[\e[1;36m\]\h\[\e[
 #}
 
 export TERM=xterm
-export PYTHONPATH=$PYTHONPATH:/home/amorvan/apps/eclipse/plugins/org.python.pydev_3.9.2.201502050007/pysrc
