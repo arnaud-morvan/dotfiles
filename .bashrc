@@ -45,3 +45,4 @@ export PROMPT_COMMAND='__git_ps1 "\[\e[1;32m\]\u\[\e[0;39m\]@\[\e[1;36m\]\h\[\e[
 #}
 
 export TERM=xterm
+
