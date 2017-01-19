@@ -49,3 +49,8 @@ export TERM=xterm
 # docker
 alias docker-gc='docker run --rm -v /var/run/docker.sock:/var/run/docker.sock -v /etc:/etc:ro spotify/docker-gc'
 
+# Utilisation de nodejs 6
+export NVM_DIR="/$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+#[ -s "$NVM_DIR/nvm.sh" ] && nvm use 6 # and use node 6
+
