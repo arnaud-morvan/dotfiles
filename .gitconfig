@@ -27,3 +27,6 @@
 
 [core]
 	excludesfile = /home/amorvan/.gitignore_global
+[rebase]
+	autostash = on
+	autosquash = true
