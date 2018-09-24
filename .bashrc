@@ -54,3 +54,4 @@ export NVM_DIR="/$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 #[ -s "$NVM_DIR/nvm.sh" ] && nvm use 6 # and use node 6
 
+. ~/.bashrc_local
