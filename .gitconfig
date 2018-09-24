@@ -30,3 +30,6 @@
 [rebase]
 	autostash = on
 	autosquash = true
+
+[diff "xmldiff"]
+    command = ~/bin/gitxmldiff

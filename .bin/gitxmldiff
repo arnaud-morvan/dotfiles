@@ -1,0 +1,3 @@
+#!/bin/bash
+
+xmldiffs.py $2 $5 | colordiff
