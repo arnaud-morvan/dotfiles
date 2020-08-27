@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Delete all dependant child images and passed images
+
+function children {
+  for i in $(docker images -q)
+  do  
+    docker history $i | grep -q $1 && echo $i
+  done
+}
+
+for p in $*
+do
+  docker rmi -f `children $p` 
+done
+

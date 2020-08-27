@@ -1,0 +1,9 @@
+#!/bin/bash
+ 
+# List all dependant children of a parent image
+ 
+for i in $(docker images -q)
+do
+  docker history $i | grep -q $1 && docker images | grep $i
+done
+
