@@ -18,6 +18,10 @@ alias mv='mv -i'
 if [ `id -u` -eq 0 ]; then
   export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/usr/bin/X11:/usr/games"
 fi
+# set PATH so it includes dotfiles bin if it exists
+if [ -d ~/.bin ] ; then
+   PATH=~/.bin:"${PATH}"
+fi
 # set PATH so it includes user's private bin if it exists
 if [ -d ~/bin ] ; then
    PATH=~/bin:"${PATH}"
