@@ -1,0 +1,15 @@
+#!/bin/bash
+
+VERSION=${1:-3.22}
+
+docker run \
+	--rm -ti \
+	-e DISPLAY=unix${DISPLAY} \
+	-v /tmp/.X11-unix:/tmp/.X11-unix \
+	-v ${HOME}:${HOME} \
+	camptocamp/qgis-server:${VERSION}-desktop \
+/usr/local/bin/start-client \
+	--profiles-path ${HOME}/.qgis/profile/ \
+
+# --hostname bridge \
+
