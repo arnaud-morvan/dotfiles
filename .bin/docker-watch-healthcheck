@@ -1,0 +1,5 @@
+#!/bin/bash
+
+CONTAINER=${1}
+
+watch "docker inspect -f '{{json .State.Health}}' ${CONTAINER} | jq"
