@@ -1,3 +1,4 @@
 #!/bin/bash
 
-docker volume rm `docker volume ls | awk '{print $2}' | grep -E '^.{64}$'`
+docker volume ls | awk '{print $2}' | grep -E '^.{64}$' | xargs --no-run-if-empty docker volume rm
+
