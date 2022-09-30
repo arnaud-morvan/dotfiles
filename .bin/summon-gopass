@@ -1,0 +1,6 @@
+#!/bin/sh
+
+#echo "toto" 1>&2
+
+gopass show $(echo "${@}"|tr : \ )
+
