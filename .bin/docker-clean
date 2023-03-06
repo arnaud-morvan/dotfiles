@@ -3,3 +3,5 @@
 docker-containers-clean
 docker-images-clean
 docker-volumes-clean
+docker builder prune -f
+docker network prune -f
