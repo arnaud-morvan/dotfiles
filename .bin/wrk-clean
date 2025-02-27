@@ -1,0 +1,5 @@
+#!/bin/bash
+
+rm -rf /var/crash/*
+sudo journalctl --vacuum-size=500M
+
